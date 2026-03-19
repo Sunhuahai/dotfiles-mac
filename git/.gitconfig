@@ -1,3 +1,5 @@
 [user]
 	name = Sunhuahai
 	email = sunhh19@icloud.com
+[core]
+	excludesfile = /Users/huahai/.config/git/ignore
