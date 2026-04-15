@@ -1,0 +1,7 @@
+# Keep the real file local at ~/.config/kaku/assistant.toml
+
+enabled = true
+api_key = "sk-..."
+model = "deepseek-chat"
+base_url = "https://api.deepseek.com"
+

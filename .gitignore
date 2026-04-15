@@ -1,0 +1,6 @@
+*.bak
+*.local
+*.private
+*.tmp
+.DS_Store
+

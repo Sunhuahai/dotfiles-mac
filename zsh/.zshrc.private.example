@@ -1,0 +1,5 @@
+# Keep secrets out of git.
+# Example:
+#
+# export OPENROUTER_API_KEY="sk-..."
+

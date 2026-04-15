@@ -1,0 +1,22 @@
+# === Theme ===
+theme = atom-one-dark
+font-family = "Maple Mono NF CN"
+font-size = 16
+font-thicken = true
+adjust-cell-height = 2
+cursor-style = block
+shell-integration-features = no-cursor
+
+
+# === Windows ===
+window-width = 80
+window-height = 20
+window-inherit-working-directory = false
+tab-inherit-working-directory = false
+split-inherit-working-directory = true
+window-save-state = never
+
+# === Safe ===
+clipboard-paste-protection = true
+clipboard-paste-bracketed-safe = true
+
