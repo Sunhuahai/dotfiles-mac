@@ -6,6 +6,7 @@ font-thicken = true
 adjust-cell-height = 2
 cursor-style = block
 shell-integration-features = no-cursor
+background-opacity = 0.8
 
 
 # === Windows ===
