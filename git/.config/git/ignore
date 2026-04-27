@@ -36,3 +36,5 @@ ENV/
 *.swp
 *.tmp
 
+
+**/.claude/settings.local.json

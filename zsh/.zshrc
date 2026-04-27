@@ -61,32 +61,6 @@ cen() {
 # ==================== code ai ==================
 export PATH=/Users/huahai/.opencode/bin:$PATH
 
-# ==================== Cli Tools ================
-# 智能跳转
-eval "$(zoxide init zsh)"
-
-# 现代 ls
-alias ls="eza --icons"
-alias ll="eza -lh --icons"
-alias la="eza -lah --icons"
-alias lt="eza --tree --level=2 --icons"
-
-# 终端目录
-y() {
-  local tmp="$(mktemp -t yazi-cwd.XXXXXX)"
-  yazi "$@" --cwd-file="$tmp"
-  if cwd="$(cat "$tmp")" && [ -n "$cwd" ]; then
-    cd "$cwd"
-  fi
-  rm -f "$tmp"
-}
-
-# 搜索
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# 自动激活环境
-eval "$(direnv hook zsh)"
-
 # ==================== LaTeX ====================
 export LATEX_MAIN="main.tex"
 
@@ -120,3 +94,8 @@ texbuild() {
 
 # =================== Private ====================
 [ -f "$HOME/.zshrc.private" ] && source "$HOME/.zshrc.private"
+
+[[ ":$PATH:" != *":$HOME/.config/kaku/zsh/bin:"* ]] && export PATH="$HOME/.config/kaku/zsh/bin:$PATH" # Kaku PATH Integration
+[[ -f "$HOME/.config/kaku/zsh/kaku.zsh" ]] && source "$HOME/.config/kaku/zsh/kaku.zsh" # Kaku Shell Integration
+
+alias rsync='rsync --exclude=.DS_Store --exclude=node_modules --exclude=.cache'
