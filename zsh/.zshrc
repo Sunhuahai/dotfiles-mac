@@ -13,28 +13,31 @@ source $ZSH/oh-my-zsh.sh
 # ==================== Starship ====================
 eval "$(starship init zsh)"
 
-# ==================== System Path =================
+# ==================== Path ========================
 export PATH="$HOME/.local/bin:$PATH"
-export OLLAMA_MODELS=/Users/huahai/models/LLM/
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+export PATH="$HOME/.opencode/bin:$PATH"
 
-# ==================== HomeBrew ====================
+# ==================== Homebrew ====================
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 export HOMEBREW_NO_ENV_HINTS=1
 
-# ==================== PATH & Python ===============
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+# ==================== Environment =================
+export OLLAMA_MODELS=$HOME/models/LLM/
 
+# ==================== Aliases =====================
 alias py='python3'
 alias pip='python3 -m pip'
 alias pycheck='python3 -m pip check'
 alias pywhich='which -a python python3 pip pip3'
 
-# ==================== Git =========================
 alias gac='git add . && git commit -m "update"'
 alias gup='git add . && git commit -m "update" && git push'
 alias dotup='git -C ~/dotfiles add -A && git -C ~/dotfiles commit -m "update" && git -C ~/dotfiles push'
 
-# ==================== Conda =======================
+alias rsync='rsync --exclude=.DS_Store --exclude=node_modules --exclude=.cache'
+
+# ==================== Conda (lazy) ================
 conda() {
     unset -f conda
     __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -58,10 +61,7 @@ cen() {
   done
 }
 
-# ==================== code ai ==================
-export PATH=/Users/huahai/.opencode/bin:$PATH
-
-# ==================== LaTeX ====================
+# ==================== LaTeX =======================
 export LATEX_MAIN="main.tex"
 
 texbuild() {
@@ -92,10 +92,9 @@ texbuild() {
     return "$exit_code"
 }
 
-# =================== Private ====================
+# ==================== Private =====================
 [ -f "$HOME/.zshrc.private" ] && source "$HOME/.zshrc.private"
 
-[[ ":$PATH:" != *":$HOME/.config/kaku/zsh/bin:"* ]] && export PATH="$HOME/.config/kaku/zsh/bin:$PATH" # Kaku PATH Integration
-[[ -f "$HOME/.config/kaku/zsh/kaku.zsh" ]] && source "$HOME/.config/kaku/zsh/kaku.zsh" # Kaku Shell Integration
-
-alias rsync='rsync --exclude=.DS_Store --exclude=node_modules --exclude=.cache'
+# ==================== Kaku ========================
+[[ ":$PATH:" != *":$HOME/.config/kaku/zsh/bin:"* ]] && export PATH="$HOME/.config/kaku/zsh/bin:$PATH"
+[[ -f "$HOME/.config/kaku/zsh/kaku.zsh" ]] && source "$HOME/.config/kaku/zsh/kaku.zsh"

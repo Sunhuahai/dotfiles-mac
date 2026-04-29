@@ -53,7 +53,7 @@ config.tab_inherit_working_directory = false
 config.split_pane_inherit_working_directory = true
 
 config.tab_bar_at_bottom = true
-config.font_size = 18
+config.font_size = 14
 config.color_scheme = 'Kaku Dark'
 
 return config
