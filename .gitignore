@@ -3,5 +3,4 @@
 *.private
 *.tmp
 .DS_Store
-zsh/config/90-local.zsh
-
+shell/zsh/.config/zsh/90-local.zsh
