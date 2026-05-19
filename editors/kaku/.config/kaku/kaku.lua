@@ -56,5 +56,12 @@ config.tab_bar_at_bottom = true
 config.font_size = 14
 config.color_scheme = 'Kaku Dark'
 
+config.font = wezterm.font_with_fallback({
+  'JetBrainsMono Nerd Font',
+  'Symbols Nerd Font Mono',
+  'Symbols Nerd Font',
+})
+
+config.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
 return config
 

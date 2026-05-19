@@ -1,11 +1,8 @@
-# Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# ~/.zprofile - login shell setup
+ZSH_CONFIG_DIR="${ZSH_CONFIG_DIR:-$HOME/.config/zsh}"
 
-# Homebrew .NET
-export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+for _zsh_login_file in "$ZSH_CONFIG_DIR"/login.d/[0-9][0-9]-*.zsh(N); do
+  [ -r "$_zsh_login_file" ] && source "$_zsh_login_file"
+done
 
-# dotnet global tools
-export PATH="$PATH:$HOME/.dotnet/tools"
-
-# Obsidian
-export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
+unset _zsh_login_file ZSH_CONFIG_DIR
