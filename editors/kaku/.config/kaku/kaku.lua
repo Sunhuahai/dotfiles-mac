@@ -63,5 +63,6 @@ config.font = wezterm.font_with_fallback({
 })
 
 config.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
+config.tab_title_show_basename_only = true
 return config
 
