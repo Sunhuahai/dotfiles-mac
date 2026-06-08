@@ -4,3 +4,4 @@
 *.tmp
 .DS_Store
 shell/zsh/.config/zsh/rc.d/99-local.zsh
+shell/zsh/.config/zsh/api-keys.zsh
