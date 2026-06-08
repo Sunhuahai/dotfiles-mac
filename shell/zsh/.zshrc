@@ -13,3 +13,7 @@ unset _zsh_config_file ZSH_CONFIG_DIR
 
 [[ ":$PATH:" != *":$HOME/.config/kaku/zsh/bin:"* ]] && export PATH="$HOME/.config/kaku/zsh/bin:$PATH" # Kaku PATH Integration
 [[ -f "$HOME/.config/kaku/zsh/kaku.zsh" ]] && source "$HOME/.config/kaku/zsh/kaku.zsh" # Kaku Shell Integration
+
+# Load private API keys for local CLI tools.
+[[ -f "$HOME/.config/zsh/api-keys.zsh" ]] && source "$HOME/.config/zsh/api-keys.zsh"
+

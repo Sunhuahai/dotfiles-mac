@@ -12,5 +12,7 @@ alias dotup='git -C ~/dotfiles add -A && git -C ~/dotfiles commit -m "update" &&
 # rsync
 alias rsync='rsync --exclude=.DS_Store --exclude=node_modules --exclude=.cache'
 
-# Apps
-alias bearcli='/Applications/Bear.app/Contents/MacOS/bearcli'
+# Apps (macOS only)
+if [ "$(uname -s)" = Darwin ] && [ -x '/Applications/Bear.app/Contents/MacOS/bearcli' ]; then
+  alias bearcli='/Applications/Bear.app/Contents/MacOS/bearcli'
+fi

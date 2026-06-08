@@ -34,7 +34,32 @@ These stay out of git:
 
 Examples are tracked where useful.
 
-## Sync
+## Install (one-click)
+
+From a fresh machine:
+
+```sh
+git clone git@github.com:huahai/dotfiles.git ~/dotfiles
+bash ~/dotfiles/scripts/install.sh
+```
+
+Or, if you haven't cloned yet, the script will clone for you:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/huahai/dotfiles/main/scripts/install.sh | bash
+```
+
+The installer:
+1. Installs base packages (zsh, git, curl, fzf, fd, rg, eza)
+2. Clones dotfiles (if not already present)
+3. Installs oh-my-zsh + plugins (zsh-autosuggestions, zsh-syntax-highlighting)
+4. Installs starship prompt
+5. Creates all symlinks via `link.sh`
+6. Sets zsh as default shell
+
+Works on **macOS** (Homebrew) and **Linux** (apt/dnf/pacman).
+
+## Sync only (already have dependencies)
 
 Run:
 
