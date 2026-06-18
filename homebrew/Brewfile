@@ -1,93 +1,165 @@
 tap "bahaaio/pomo"
-tap "farion1231/ccswitch"
-tap "hmbown/deepseek-tui"
-tap "jundot/omlx", "https://github.com/jundot/omlx"
-tap "siguremo/tap"
-tap "steipete/tap"
-tap "surge-downloader/tap"
-tap "tw93/tap"
+tap "farion1231/ccswitch", trusted: true
+tap "surgedm/tap", trusted: true
+tap "tw93/tap", trusted: true
+# All-in-one AI-Powered CLI Chat & Copilot
 brew "aichat"
+# Download with resuming and segmented downloading
 brew "aria2"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Double-Array Trie Library
 brew "libdatrie"
+# Thai language support library
 brew "libthai"
+# Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
+# Create and run Linux containers using lightweight virtual machines
 brew "container"
+# Load/unload environment variables based on $PWD
 brew "direnv"
+# .NET Core
 brew "dotnet"
+# .NET Core
 brew "dotnet@8"
+# Select default apps for documents and URL schemes on macOS
 brew "duti"
+# Modern, maintained replacement for ls
 brew "eza"
+# Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# Command-line fuzzy finder written in Go
 brew "fzf"
-brew "node"
-brew "gemini-cli"
+# GitHub command-line tool
 brew "gh"
+# Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Neural Network Go engine with no human-provided knowledge
 brew "katago"
+# Simple terminal UI for git commands
 brew "lazygit"
+# LLM inference in C/C++
 brew "llama.cpp"
+# Mac App Store command-line interface
+brew "mas"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Port scanning utility for large networks
 brew "nmap"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# AI coding agent, built for the terminal
 brew "opencode"
+# Open client for Cisco AnyConnect VPN
 brew "openconnect"
+# Multithreaded PNG optimizer written in Rust
 brew "oxipng"
+# Swiss-army knife of markup format conversion
 brew "pandoc"
+# Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Rsync for cloud storage
 brew "rclone"
+# Utility that provides fast incremental file transfer
 brew "rsync"
+# Cross-shell prompt for astronauts
 brew "starship"
+# Very fast implementation of tldr in Rust
 brew "tealdeer"
+# Modern SSH server for teams managing distributed infrastructure
 brew "teleport"
+# Implementation of the Language Server Protocol for LaTeX
 brew "texlab"
+# Text interface for Git repositories
 brew "tig"
+# Terminal multiplexer
 brew "tmux"
+# Markup-based typesetting system
 brew "typst"
+# File synchronization tool
 brew "unison"
+# Extraction utility for .zip compressed archives
 brew "unzip"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Internet file retriever
 brew "wget"
+# Generate your Xcode project from a spec file and your folder structure
 brew "xcodegen"
+# Bring your favorite shell wherever you go through the ssh
 brew "xxh"
+# Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
-brew "hmbown/deepseek-tui/deepseek-tui"
+# Comprehensive macOS cleanup and application uninstall tool
 brew "tw93/tap/mole"
-cask "antigravity"
-cask "farion1231/ccswitch/cc-switch"
+# Cloud storage service
+cask "baidunetdisk"
+# Configuration manager for AI coding agents
+cask "cc-switch"
+# OpenAI's coding agent that runs in your terminal
 cask "codex"
-cask "cursor"
+# Disk space visualiser
+cask "daisydisk"
 cask "font-fira-code"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-maple-mono"
 cask "font-maple-mono-nf"
 cask "font-maple-mono-nf-cn"
 cask "font-symbols-only-nerd-font"
-cask "input-source-pro"
-cask "tw93/tap/kakuku"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Web browser
+cask "google-chrome"
+# Free and open-source media player
+cask "iina"
+# A fast, out-of-the-box terminal built for AI coding
+cask "tw93/tap/kakuku", trusted: true
+# File archiver
 cask "keka"
-cask "llamabarn"
+# Open-source cross-platform alternative to AirDrop
 cask "localsend"
+# Mouse utility to add gesture functions and smooth scrolling to 3rd party mice
+cask "mac-mouse-fix"
+# Full TeX Live distribution without GUI applications
 cask "mactex-no-gui"
-cask "miaoyan"
-cask "miniconda"
-cask "notion"
-cask "obs"
+# Minimal installer for conda specific to conda-forge
+cask "miniforge"
+# Deep clean, analyze, and optimize app
+cask "mole-app"
+# Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-cask "opencode-desktop"
-cask "bahaaio/pomo/pomo"
-cask "qq"
-cask "stats"
-cask "sublime-text"
-cask "surge-downloader/tap/surge"
+# A simple Pomodoro timer TUI application written in Go.
+cask "bahaaio/pomo/pomo", trusted: true
+# Messaging app with a focus on speed and security
 cask "telegram"
-cask "trae"
+# Cloud video conferencing
+cask "tencent-meeting"
+# Configurable document editor that supports Markdown
 cask "typora"
+# Open-source code editor
 cask "visual-studio-code"
+# Free messaging and calling application
+cask "wechat"
+mas "Developer", id: 640199958
+mas "Lattice", id: 6761349832
+mas "Notability", id: 360593530
+mas "Obsidian Web Clipper", id: 6720708363
+mas "Shadowrocket", id: 932747118
+mas "Tampermonkey", id: 6738342400
+mas "VidHub", id: 1659622164
+mas "Windows App", id: 1295203466
+mas "沉浸式翻译", id: 6447957425
+mas "钉钉", id: 1435447041
 vscode "james-yu.latex-workshop"
 vscode "ms-ceintl.vscode-language-pack-zh-hans"
 vscode "ms-python.debugpy"
@@ -106,3 +178,4 @@ vscode "zhuangtongfa.material-theme"
 cargo "fd-find"
 npm "@larksuite/cli"
 npm "pptxgenjs"
+npm "writp"

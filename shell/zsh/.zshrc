@@ -17,3 +17,10 @@ unset _zsh_config_file ZSH_CONFIG_DIR
 # Load private API keys for local CLI tools.
 [[ -f "$HOME/.config/zsh/api-keys.zsh" ]] && source "$HOME/.config/zsh/api-keys.zsh"
 
+
+# bun completions
+[ -s "/Users/huahai/.bun/_bun" ] && source "/Users/huahai/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
