@@ -66,5 +66,8 @@ config.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
 config.tab_title_show_basename_only = true
 config.window_background_opacity = 0.9
 config.macos_window_background_blur = 10
+config.remember_last_cwd = false
+config.restore_previous_session = false
+config.smart_tab_mode = 'off'
 return config
 
