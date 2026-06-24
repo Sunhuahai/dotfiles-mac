@@ -54,7 +54,7 @@ config.split_pane_inherit_working_directory = true
 
 config.tab_bar_at_bottom = true
 config.font_size = 14
-config.color_scheme = 'Kaku Dark'
+config.color_scheme = (wezterm.gui and wezterm.gui.get_appearance() or 'Dark'):find('Dark') and 'Kaku Dark' or 'Kaku Light'
 
 config.font = wezterm.font_with_fallback({
   'JetBrainsMono Nerd Font',

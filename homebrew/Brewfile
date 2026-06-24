@@ -1,13 +1,17 @@
 tap "bahaaio/pomo"
 tap "farion1231/ccswitch", trusted: true
-tap "surgedm/tap", trusted: true
+tap "surgedm/tap", "https://github.com/SurgeDM/homebrew-tap.git", trusted: true
 tap "tw93/tap", trusted: true
 # All-in-one AI-Powered CLI Chat & Copilot
 brew "aichat"
 # Download with resuming and segmented downloading
 brew "aria2"
+# Terminal bandwidth utilization tool
+brew "bandwhich"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Yet another cross-platform graphical process/system monitor
+brew "bottom"
 # Double-Array Trie Library
 brew "libdatrie"
 # Thai language support library
@@ -22,8 +26,16 @@ brew "direnv"
 brew "dotnet"
 # .NET Core
 brew "dotnet@8"
+# View disk space usage and delete unwanted data, fast
+brew "dua-cli"
+# Disk Usage/Free Utility - a better 'df' alternative
+brew "duf"
+# More intuitive version of du in rust
+brew "dust"
 # Select default apps for documents and URL schemes on macOS
 brew "duti"
+# Linux utility to get information on filesystems, like df but better
+brew "dysk"
 # Modern, maintained replacement for ls
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
@@ -32,10 +44,14 @@ brew "fastfetch"
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Disk usage analyzer with console interface written in Go
+brew "gdu"
 # GitHub command-line tool
 brew "gh"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Improved top (interactive process viewer)
+brew "htop"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Neural Network Go engine with no human-provided knowledge
@@ -44,6 +60,8 @@ brew "katago"
 brew "lazygit"
 # LLM inference in C/C++
 brew "llama.cpp"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
 # Mac App Store command-line interface
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -64,6 +82,8 @@ brew "oxipng"
 brew "pandoc"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Modern replacement for ps written in Rust
+brew "procs"
 # Rsync for cloud storage
 brew "rclone"
 # Utility that provides fast incremental file transfer
@@ -88,10 +108,14 @@ brew "unison"
 brew "unzip"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Convert HTML to PDF
+brew "weasyprint"
 # Internet file retriever
 brew "wget"
 # Generate your Xcode project from a spec file and your folder structure
 brew "xcodegen"
+# Friendly and fast tool for sending HTTP requests
+brew "xh"
 # Bring your favorite shell wherever you go through the ssh
 brew "xxh"
 # Blazing fast terminal file manager written in Rust, based on async I/O
@@ -116,14 +140,14 @@ cask "font-maple-mono"
 cask "font-maple-mono-nf"
 cask "font-maple-mono-nf-cn"
 cask "font-symbols-only-nerd-font"
+# Notes manager
+cask "fsnotes"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
 cask "google-chrome"
 # Free and open-source media player
 cask "iina"
-# A fast, out-of-the-box terminal built for AI coding
-cask "tw93/tap/kakuku", trusted: true
 # File archiver
 cask "keka"
 # Open-source cross-platform alternative to AirDrop
@@ -150,6 +174,7 @@ cask "typora"
 cask "visual-studio-code"
 # Free messaging and calling application
 cask "wechat"
+mas "Bear", id: 1091189122
 mas "Developer", id: 640199958
 mas "Lattice", id: 6761349832
 mas "Notability", id: 360593530
