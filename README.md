@@ -5,7 +5,7 @@ Personal shell and tool configuration for macOS.
 ## Managed here
 
 - `shell/`: `zsh`, `bash`
-- `cli/`: `git`, `yazi`, `fastfetch`
+- `cli/`: `git`, `yazi`, `fastfetch`, `pi`
 - `terminal/`: `tmux`, `starship`, `ghostty`
 - `editors/`: `zed`, `lvim`, `kaku`
 - `homebrew/`: `Brewfile`
@@ -13,6 +13,18 @@ Personal shell and tool configuration for macOS.
 
 Most package directories mirror the target path under `$HOME`. For example,
 `cli/yazi/.config/yazi/yazi.toml` links to `~/.config/yazi/yazi.toml`.
+
+## Pi Agent Layout
+
+`cli/pi/.pi/agent/` tracks the reproducible Pi setup:
+
+- five public prompt routers: `novel`, `paper`, `research`, `review`, and `syscare`
+- private subagent definitions and their routing extensions
+- the `PI AGENT` startup header and quiet startup setting
+- novel templates, validation tools, and shared workbench workflows
+
+Machine-generated or sensitive Pi state remains local: `auth.json`, sessions,
+model caches, package caches, and the Otty-managed integration extension.
 
 ## Zsh Layout
 
@@ -31,6 +43,7 @@ These stay out of git:
 - `~/.config/kaku/assistant.toml`
 - `~/.config/rclone/rclone.conf`
 - `~/.ssh/*`
+- `~/.pi/agent/auth.json`
 
 Examples are tracked where useful.
 
