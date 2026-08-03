@@ -64,6 +64,10 @@ brew "llama.cpp"
 brew "lsd"
 # Mac App Store command-line interface
 brew "mas"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Deep clean and optimize your Mac
+brew "mole"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Port scanning utility for large networks
@@ -92,6 +96,8 @@ brew "rsync"
 brew "starship"
 # Very fast implementation of tldr in Rust
 brew "tealdeer"
+# Telegram Messenger downloader/tools written in Golang
+brew "telegram-downloader"
 # Modern SSH server for teams managing distributed infrastructure
 brew "teleport"
 # Implementation of the Language Server Protocol for LaTeX
@@ -124,12 +130,8 @@ brew "yazi"
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-# Comprehensive macOS cleanup and application uninstall tool
-brew "tw93/tap/mole"
 # Cloud storage service
 cask "baidunetdisk"
-# Configuration manager for AI coding agents
-cask "cc-switch"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Disk space visualiser
@@ -140,14 +142,12 @@ cask "font-maple-mono"
 cask "font-maple-mono-nf"
 cask "font-maple-mono-nf-cn"
 cask "font-symbols-only-nerd-font"
-# Notes manager
-cask "fsnotes"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Web browser
-cask "google-chrome"
 # Free and open-source media player
 cask "iina"
+# A fast, out-of-the-box terminal built for AI coding
+cask "tw93/tap/kakuku", trusted: true
 # File archiver
 cask "keka"
 # Open-source cross-platform alternative to AirDrop
@@ -174,10 +174,7 @@ cask "typora"
 cask "visual-studio-code"
 # Free messaging and calling application
 cask "wechat"
-mas "Bear", id: 1091189122
-mas "Developer", id: 640199958
 mas "Lattice", id: 6761349832
-mas "Notability", id: 360593530
 mas "Obsidian Web Clipper", id: 6720708363
 mas "Shadowrocket", id: 932747118
 mas "Tampermonkey", id: 6738342400
@@ -201,6 +198,7 @@ vscode "openai.chatgpt"
 vscode "rust-lang.rust-analyzer"
 vscode "zhuangtongfa.material-theme"
 cargo "fd-find"
+npm "@earendil-works/pi-coding-agent"
 npm "@larksuite/cli"
 npm "pptxgenjs"
 npm "writp"
