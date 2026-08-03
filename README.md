@@ -20,7 +20,7 @@ Most package directories mirror the target path under `$HOME`. For example,
 
 - five public prompt routers: `novel`, `paper`, `research`, `review`, and `syscare`
 - private subagent definitions and their routing extensions
-- the `PI AGENT` startup header and quiet startup setting
+- the `PI AGENT` startup header, rounded status input frame, and quiet startup setting
 - novel templates, validation tools, and shared workbench workflows
 
 Machine-generated or sensitive Pi state remains local: `auth.json`, sessions,
