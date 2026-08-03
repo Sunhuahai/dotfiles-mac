@@ -3,7 +3,9 @@
     "logo": {
         "source": "${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/pngs/*.png",
         "type": "kitty",
+        "width": 18,
         "height": 18,
+        "preserveAspectRatio": true,
         "padding": { "top": 2, "right": 8 }
     },
     "display": {
@@ -17,11 +19,8 @@
         { "type": "custom", "format": "┌────────────────────────────────────────────┐" },
         { "type": "os", "key": "  󰣇  OS", "keyColor": "red", "format": "{2}" },
         { "type": "command", "key": "  󰌽  Kernel", "keyColor": "red", "text": "uname -r", "format": "{1}" },
-        { "type": "packages", "key": "  󰏖  Packages", "keyColor": "red", "format": "{1}" },
         { "type": "display", "key": "  󰍹  Display", "keyColor": "green", "format": "{1}x{2} @ {3}Hz" },
-        { "type": "wm", "key": "  󰨇  WM", "keyColor": "green", "format": "{2}" },
         { "type": "de", "key": "  󰧨  DE", "keyColor": "green", "format": "{2}" },
-        { "type": "theme", "key": "  󰏘  Theme",  "keyColor":  "green",  "format": "{2}" },
         { "type": "icons", "key": "  󰀻  Icons", "keyColor": "yellow", "format": "{2}" },
         { "type": "terminal", "key": "  󰆍  Terminal", "keyColor": "yellow", "format": "{3}" },
         { "type": "command", "key": "  󰞷  Shell", "keyColor": "yellow",  "text": "echo $SHELL | awk -F/ '{print $NF}'"},
@@ -52,4 +51,3 @@
         }
     ]
 }
-
